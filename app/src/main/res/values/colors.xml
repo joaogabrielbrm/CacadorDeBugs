@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bug_background">#101820</color>
+    <color name="bug_surface">#18252B</color>
+    <color name="bug_surface_light">#22343B</color>
+
+    <color name="bug_primary">#80CBC4</color>
+    <color name="bug_primary_dark">#4DB6AC</color>
+
+    <color name="bug_text">#FFFFFF</color>
+    <color name="bug_text_secondary">#B0BEC5</color>
+
+    <color name="bug_low">#66BB6A</color>
+    <color name="bug_medium">#FFCA28</color>
+    <color name="bug_high">#FF8A65</color>
+    <color name="bug_critical">#EF5350</color>
+
+    <color name="bug_open">#FF7043</color>
+    <color name="bug_fixed">#66BB6A</color>
+
+</resources>

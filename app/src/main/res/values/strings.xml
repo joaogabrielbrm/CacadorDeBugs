@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bug Hunter</string>
+
+    <string name="descricao_logo">Ícone do aplicativo Bug Hunter</string>
+
+    <string name="titulo_app">BUG HUNTER</string>
+    <string name="subtitulo_app">Central de caça aos bugs</string>
+
+    <string name="painel_total">TOTAL</string>
+    <string name="painel_abertos">ABERTOS</string>
+    <string name="painel_corrigidos">CORRIGIDOS</string>
+    <string name="painel_pontuacao">PONTUAÇÃO</string>
+
+    <string name="titulo_cadastro">Registrar novo bug</string>
+
+    <string name="label_titulo">Título do problema</string>
+    <string name="hint_titulo">Ex.: Botão de login não responde</string>
+
+    <string name="label_modulo">Módulo ou tela</string>
+    <string name="hint_modulo">Ex.: Tela de Login</string>
+
+    <string name="label_descricao">Descrição do erro</string>
+    <string name="hint_descricao">Descreva o problema encontrado</string>
+
+    <string name="label_gravidade">Gravidade</string>
+    <string name="gravidade_atual">Gravidade: %1$d — %2$s</string>
+
+    <string name="btn_registrar">REGISTRAR BUG</string>
+
+    <string name="lista_vazia">Nenhum bug registrado. O sistema parece perfeito... por enquanto!</string>
+
+    <string name="status_aberto">Aberto</string>
+    <string name="status_corrigido">Corrigido</string>
+
+    <string name="gravidade_baixa">Baixa</string>
+    <string name="gravidade_media">Média</string>
+    <string name="gravidade_alta">Alta</string>
+    <string name="gravidade_critica">Crítica</string>
+
+    <string name="erro_titulo">Informe o título do problema.</string>
+    <string name="erro_modulo">Informe o módulo ou tela.</string>
+    <string name="erro_descricao">A descrição deve possuir pelo menos 10 caracteres.</string>
+
+    <string name="bug_removido">Bug %1$s removido.</string>
+
+    <string name="descricao_bug">Descrição do problema</string>
+
+    <string name="painel_pontuacao_valor">PONTUAÇÃO: %1$d pontos</string>
+
+    <string name="texto_gravidade">%1$s: %2$d — %3$s</string>
+    <string name="bug_registrado">%1$s registrado com sucesso!</string>
+    <string name="label_gravidade_item">Gravidade</string>
+    <string name="valor_zero">0</string>
+
+</resources>

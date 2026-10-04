@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bug_background"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- IDENTIDADE -->
+
+    <TextView
+        android:id="@+id/tvTituloApp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_app"
+        android:textColor="@color/bug_primary"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSubtituloApp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/subtitulo_app"
+        android:textColor="@color/bug_text_secondary"
+        android:textSize="13sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloApp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- PAINEL DE ACOMPANHAMENTO -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutPainel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:background="@color/bug_surface"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtituloApp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tvLabelTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/painel_total"
+            android:textColor="@color/bug_text_secondary"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tvLabelAbertos" />
+
+        <TextView
+            android:id="@+id/tvLabelAbertos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/painel_abertos"
+            android:textColor="@color/bug_text_secondary"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvLabelTotal"
+            app:layout_constraintEnd_toStartOf="@id/tvLabelCorrigidos" />
+
+        <TextView
+            android:id="@+id/tvLabelCorrigidos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/painel_corrigidos"
+            android:textColor="@color/bug_text_secondary"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvLabelAbertos"
+            app:layout_constraintEnd_toStartOf="@id/tvValorTotal" />
+
+        <TextView
+            android:id="@+id/tvValorTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/bug_text"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/tvLabelTotal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tvValorAbertos" />
+
+        <TextView
+            android:id="@+id/tvValorAbertos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/bug_open"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/tvLabelAbertos"
+            app:layout_constraintStart_toEndOf="@id/tvValorTotal"
+            app:layout_constraintEnd_toStartOf="@id/tvValorCorrigidos" />
+
+        <TextView
+            android:id="@+id/tvValorCorrigidos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/bug_fixed"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tvLabelCorrigidos"
+            app:layout_constraintStart_toEndOf="@id/tvValorAbertos"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvPontuacao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/painel_pontuacao"
+            android:textColor="@color/bug_primary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/tvValorTotal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- FORMULÁRIO -->
+
+    <TextView
+        android:id="@+id/tvTituloCadastro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="@string/titulo_cadastro"
+        android:textColor="@color/bug_text"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/layoutPainel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etTituloBug"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:hint="@string/hint_titulo"
+        android:inputType="textCapSentences"
+        android:textColor="@color/bug_text"
+        android:textColorHint="@color/bug_text_secondary"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloCadastro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etModuloBug"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:hint="@string/hint_modulo"
+        android:inputType="textCapSentences"
+        android:textColor="@color/bug_text"
+        android:textColorHint="@color/bug_text_secondary"
+        app:layout_constraintTop_toBottomOf="@id/etTituloBug"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etDescricaoBug"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="4dp"
+        android:gravity="top|start"
+        android:hint="@string/hint_descricao"
+        android:inputType="textCapSentences|textMultiLine"
+        android:textColor="@color/bug_text"
+        android:textColorHint="@color/bug_text_secondary"
+        app:layout_constraintTop_toBottomOf="@id/etModuloBug"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvGravidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/gravidade_atual"
+        android:textColor="@color/bug_primary"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/etDescricaoBug"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBarGravidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:max="4"
+        android:progress="0"
+        app:layout_constraintTop_toBottomOf="@id/tvGravidade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegistrarBug"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/btn_registrar"
+        app:layout_constraintTop_toBottomOf="@id/seekBarGravidade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- MENSAGEM DA LISTA VAZIA -->
+
+    <TextView
+        android:id="@+id/tvListaVazia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/lista_vazia"
+        android:textColor="@color/bug_text_secondary"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/btnRegistrarBug"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- RECYCLERVIEW -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerBugs"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvListaVazia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:listitem="@layout/item_bug" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

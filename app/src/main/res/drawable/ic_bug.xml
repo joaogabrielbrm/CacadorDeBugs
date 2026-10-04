@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+
+    <!-- Corpo do inseto -->
+    <path
+        android:fillColor="#80CBC4"
+        android:pathData="M32,17 C23,17 19,25 19,35 C19,46 24,53 32,53 C40,53 45,46 45,35 C45,25 41,17 32,17 Z" />
+
+    <!-- Cabeça -->
+    <path
+        android:fillColor="#4DB6AC"
+        android:pathData="M24,20 C24,15 27,12 32,12 C37,12 40,15 40,20 Z" />
+
+    <!-- Divisão central -->
+    <path
+        android:strokeColor="#101820"
+        android:strokeWidth="2"
+        android:pathData="M32,20 L32,52" />
+
+    <!-- Antenas -->
+    <path
+        android:strokeColor="#80CBC4"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M28,14 L23,7 M36,14 L41,7" />
+
+    <!-- Patas -->
+    <path
+        android:strokeColor="#80CBC4"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M21,28 L10,23 M20,36 L8,36 M22,44 L11,51 M43,28 L54,23 M44,36 L56,36 M42,44 L53,51" />
+
+    <!-- Detalhes -->
+    <path
+        android:fillColor="#101820"
+        android:pathData="M26,27 A2,2 0,1 0,30 27 A2,2 0,1 0,26 27 M34,27 A2,2 0,1 0,38 27 A2,2 0,1 0,34 27" />
+
+</vector>
